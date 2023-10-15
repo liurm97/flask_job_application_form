@@ -1,1 +1,57 @@
-<h1>Hello World </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Linkedin Clone Home</title>
+</head>
+<body>
+    <header class = "job-header">
+        <h1 class = "job-header__title">Job Application</h1>
+    </header>
+    <section class="job-header__form">
+        <form action="/submit_application" method="POST">
+            <div class="job-header__forms">
+                <div class="form">
+                    <label for="fname">First Name: </label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div class="form">
+                    <label for="lname">Last Name: </label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+                <div class="form">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form">
+                    <label for="date">Available Date: </label>
+                    <input type="date" name="date" id="date">
+                </div>
+
+                <!--Radio Buttons-->
+                <fieldset>
+                    <legend>Employment Status</legend>
+                <div class="employment">
+                    <input class="form__radio" type="radio" name="employment"
+                           id="employed" value="employed" checked>
+                    <label for="employed">Employed </label>
+                </div>
+                <div class="employment">
+                    <input class="form__radio" type="radio" name="employment"
+                           id="unemployed" value="unemployed">
+                    <label for="unemployed">Unemployed </label>
+                </div>
+                <div class="employment">
+                    <input class="form__radio" type="radio" name="employment"
+                           id="intern" value="intern">
+                    <label for="intern">Intern </label>
+                </div>
+            </fieldset>
+            <input class="job-header__submit" type="submit" value="Apply">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
