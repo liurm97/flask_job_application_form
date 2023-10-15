@@ -1,0 +1,104 @@
+*,
+*:before,
+*:after
+{
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-size: 16px;
+}
+
+
+.job-header
+{
+    text-align:center;
+}
+
+.job-header__title
+{
+    color: #00a8ff;
+    font-size: 4.8rem;
+}
+
+/* ------ FORM ------ */
+body form
+{
+    min-width: 96rem;
+    padding: 2.4rem;
+    font-size: 3.6rem;
+    background: #d1ccc0;
+}
+
+.job-header__form
+{
+    padding: 2.4rem;
+}
+
+body form label
+{
+    font-size: 3.6rem;
+}
+
+body form input
+{
+    font-size: 3rem;
+}
+
+.job-header__forms
+{
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    self-grow: 0;
+
+}
+
+.job-header__submit
+{
+    margin-top: 2.4rem;
+    padding: 1.2rem 2rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 0.2rem #000
+    flex-grow: 1;
+    transition: all .3s;
+}
+
+.job-header__submit:hover
+{
+    background-color: #00a8ff;
+}
+
+
+.form__radio
+{
+    width: 3rem;
+    height: 3rem;
+}
+
+fieldset legend
+{
+    font-size: 3.6rem;
+    letter-spacing: .3rem;
+    font-weight: 700;
+}
+
+form input
+{
+    width: 50rem;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+}
